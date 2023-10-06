@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All Pokemons</title>
+</head>
+<body>
+
+    <a href ="/"> Go back home </a>
+    <h3>
+        Here are all of the known Pokemons:
+      </h3>
+        <!-- 'pokemons' was the name of the pokemon array. 'pokemon' (in the forEach) represents 1 pokemon -->
+        <!-- you currently have 'pokemons' with an 's' in each element. ive done both pokemon and pokemons -->
+
+      <% pokemons.forEach((pokemon) => { %>
+          <div class="pokemonCard">
+              <h2><%= pokemon.PokedexNo %>. <a href = "/oneMon/<%= pokemon.Name %> "><%= pokemon.Name %> </h2></a>
+            </ul>
+          </div>
+      <% }) %>
+    
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Information Form</title>
+</head>
+<body>
+
+    <h1> Create your own Pokemon!</h1>
+
+   
+    <form action="/api/pokemon/createOneMon" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="Name">
+        
+        <br><br>
+        
+        <label for="pokedexNo">Pokedex Number:</label>
+        <input type="number" id="pokedexNo" name="PokedexNo">
+        
+        <br><br>
+        
+        <label for="type">Type:</label>
+        <input type="text" id="type" name="Type">
+        
+        <br><br>
+        
+        <label for="moves">Moves:</label>
+        <input type="text" id="moves" name="Moves">
+        <br><br>
+        
+        <input type="submit" value="Submit">
+    </form>
+
+    <a href ="/"> Go back home </a>
+</body>
+</html>

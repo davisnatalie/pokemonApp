@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Information Form</title>
+</head>
+<body>
+
+    <h1> Update A Pokemon!</h1>
+<a href="/oneMon/<%=oneMon.Name%>"> Back to <%=oneMon.Name%></a>
+   
+   <h2><form action="/api/pokemon/updateOneMon/<%=oneMon.Name%>?_method=PUT" method="post">
+
+        <label for="name"><%=oneMon.Name%>:</label>
+        <input type="text" id="name" name="Name">
+        
+        <br><br>
+        
+        <label for="pokedexNo"><%=oneMon.PokedexNo%>:</label>
+        <input type="number" id="pokedexNo" name="PokedexNo">
+        
+        <br><br>
+        
+        <label for="type"><%=oneMon.Type%>:</label>
+        <input type="text" id="type" name="Type">
+        
+        <br><br>
+        
+        <label for="moves"><%=oneMon.Moves%>:</label>
+        <input type="text" id="moves" name="Moves">
+        <br><br>
+        
+
+        <input type="submit" name="_method" value="UPDATE THIS POKEMON">
+    </form>
+</h2>
+    <a href ="/"> Go back home </a>
+</body>
+</html>
